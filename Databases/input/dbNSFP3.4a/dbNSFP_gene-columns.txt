@@ -1,0 +1,280 @@
+Gene_name: Gene symbol from HGNC	2
+Ensembl_gene: Ensembl gene id (from HGNC)	2
+chr: Chromosome number (from HGNC)	2
+Gene_old_names: Old gene symbol (from HGNC)	2
+Gene_other_names: Other gene names (from HGNC)	2
+Uniprot_acc(HGNC/Uniprot): Uniprot acc number (from HGNC and Uniprot)	2
+Uniprot_id(HGNC/Uniprot): Uniprot id (from HGNC and Uniprot)	2
+Entrez_gene_id: Entrez gene id (from HGNC)	2
+CCDS_id: CCDS id (from HGNC)	2
+Refseq_id: Refseq gene id (from HGNC)	2
+ucsc_id: UCSC gene id (from HGNC)	2
+MIM_id: MIM gene id (from HGNC)	2
+Gene_full_name: Gene full name (from HGNC)	2
+Pathway(Uniprot): Pathway description from Uniprot 	2
+Pathway(BioCarta)_short: Short name of the Pathway(s) the gene belongs to (from BioCarta)	2
+Pathway(BioCarta)_full: Full name(s) of the Pathway(s) the gene belongs to (from BioCarta)	2
+Pathway(ConsensusPathDB): Pathway(s) the gene belongs to (from ConsensusPathDB)	2
+Pathway(KEGG)_id: ID(s) of the Pathway(s) the gene belongs to (from KEGG)	2
+Pathway(KEGG)_full: Full name(s) of the Pathway(s) the gene belongs to (from KEGG)	2
+Function_description: Function description of the gene (from Uniprot)	2
+Disease_description: Disease(s) the gene caused or associated with (from Uniprot)	2
+MIM_phenotype_id: MIM id(s) of the phenotype the gene caused or associated with (from Uniprot)	2
+MIM_disease: MIM disease name(s) with MIM id(s) in "[]" (from Uniprot)	2
+Trait_association(GWAS): Trait(s) the gene associated with (from GWAS catalog)	2
+GO_biological_process: GO terms for biological process 	2
+GO_cellular_component: GO terms for cellular component 	2
+GO_molecular_function: GO terms for molecular function 	2
+Tissue_specificity(Uniprot): Tissue specificity description from Uniprot 	2
+Expression(egenetics): Tissues/organs the gene expressed in (egenetics data from BioMart)	2
+Expression(GNF/Atlas): Tissues/organs the gene expressed in (GNF/Atlas data from BioMart)	2
+Adipose-Subcutaneous minimum: minimum rpkm of GTEx V6 Adipose-Subcutaneous samples	1
+Adipose-Subcutaneous maximum: minimum rpkm of GTEx V6 Adipose-Subcutaneous samples	1
+Adipose-Subcutaneous average: minimum rpkm of GTEx V6 Adipose-Subcutaneous samples	1
+Adipose-Subcutaneous nsample: number of GTEx V6 Adipose-Subcutaneous samples	1
+Adipose-Visceral(Omentum) minimum: minimum rpkm of GTEx V6 Adipose-Visceral(Omentum) samples	1
+Adipose-Visceral(Omentum) maximum: minimum rpkm of GTEx V6 Adipose-Visceral(Omentum) samples	1
+Adipose-Visceral(Omentum) average: minimum rpkm of GTEx V6 Adipose-Visceral(Omentum) samples	1
+Adipose-Visceral(Omentum) nsample: number of GTEx V6 Adipose-Visceral(Omentum) samples	1
+AdrenalGland minimum: minimum rpkm of GTEx V6 AdrenalGland samples	1
+AdrenalGland maximum: minimum rpkm of GTEx V6 AdrenalGland samples	1
+AdrenalGland average: minimum rpkm of GTEx V6 AdrenalGland samples	1
+AdrenalGland nsample: number of GTEx V6 AdrenalGland samples	1
+Artery-Aorta minimum: minimum rpkm of GTEx V6 Artery-Aorta samples	1
+Artery-Aorta maximum: minimum rpkm of GTEx V6 Artery-Aorta samples	1
+Artery-Aorta average: minimum rpkm of GTEx V6 Artery-Aorta samples	1
+Artery-Aorta nsample: number of GTEx V6 Artery-Aorta samples	1
+Artery-Coronary minimum: minimum rpkm of GTEx V6 Artery-Coronary samples	1
+Artery-Coronary maximum: minimum rpkm of GTEx V6 Artery-Coronary samples	1
+Artery-Coronary average: minimum rpkm of GTEx V6 Artery-Coronary samples	1
+Artery-Coronary nsample: number of GTEx V6 Artery-Coronary samples	1
+Artery-Tibial minimum: minimum rpkm of GTEx V6 Artery-Tibial samples	1
+Artery-Tibial maximum: minimum rpkm of GTEx V6 Artery-Tibial samples	1
+Artery-Tibial average: minimum rpkm of GTEx V6 Artery-Tibial samples	1
+Artery-Tibial nsample: number of GTEx V6 Artery-Tibial samples	1
+Bladder minimum: minimum rpkm of GTEx V6 Bladder samples	1
+Bladder maximum: minimum rpkm of GTEx V6 Bladder samples	1
+Bladder average: minimum rpkm of GTEx V6 Bladder samples	1
+Bladder nsample: number of GTEx V6 Bladder samples	1
+Brain-Amygdala minimum: minimum rpkm of GTEx V6 Brain-Amygdala samples	1
+Brain-Amygdala maximum: minimum rpkm of GTEx V6 Brain-Amygdala samples	1
+Brain-Amygdala average: minimum rpkm of GTEx V6 Brain-Amygdala samples	1
+Brain-Amygdala nsample: number of GTEx V6 Brain-Amygdala samples	1
+Brain-Anteriorcingulatecortex(BA24) minimum: minimum rpkm of GTEx V6 Brain-Anteriorcingulatecortex(BA24) samples	1
+Brain-Anteriorcingulatecortex(BA24) maximum: minimum rpkm of GTEx V6 Brain-Anteriorcingulatecortex(BA24) samples	1
+Brain-Anteriorcingulatecortex(BA24) average: minimum rpkm of GTEx V6 Brain-Anteriorcingulatecortex(BA24) samples	1
+Brain-Anteriorcingulatecortex(BA24) nsample: number of GTEx V6 Brain-Anteriorcingulatecortex(BA24) samples	1
+Brain-Caudate(basalganglia) minimum: minimum rpkm of GTEx V6 Brain-Caudate(basalganglia) samples	1
+Brain-Caudate(basalganglia) maximum: minimum rpkm of GTEx V6 Brain-Caudate(basalganglia) samples	1
+Brain-Caudate(basalganglia) average: minimum rpkm of GTEx V6 Brain-Caudate(basalganglia) samples	1
+Brain-Caudate(basalganglia) nsample: number of GTEx V6 Brain-Caudate(basalganglia) samples	1
+Brain-CerebellarHemisphere minimum: minimum rpkm of GTEx V6 Brain-CerebellarHemisphere samples	1
+Brain-CerebellarHemisphere maximum: minimum rpkm of GTEx V6 Brain-CerebellarHemisphere samples	1
+Brain-CerebellarHemisphere average: minimum rpkm of GTEx V6 Brain-CerebellarHemisphere samples	1
+Brain-CerebellarHemisphere nsample: number of GTEx V6 Brain-CerebellarHemisphere samples	1
+Brain-Cerebellum minimum: minimum rpkm of GTEx V6 Brain-Cerebellum samples	1
+Brain-Cerebellum maximum: minimum rpkm of GTEx V6 Brain-Cerebellum samples	1
+Brain-Cerebellum average: minimum rpkm of GTEx V6 Brain-Cerebellum samples	1
+Brain-Cerebellum nsample: number of GTEx V6 Brain-Cerebellum samples	1
+Brain-Cortex minimum: minimum rpkm of GTEx V6 Brain-Cortex samples	1
+Brain-Cortex maximum: minimum rpkm of GTEx V6 Brain-Cortex samples	1
+Brain-Cortex average: minimum rpkm of GTEx V6 Brain-Cortex samples	1
+Brain-Cortex nsample: number of GTEx V6 Brain-Cortex samples	1
+Brain-FrontalCortex(BA9) minimum: minimum rpkm of GTEx V6 Brain-FrontalCortex(BA9) samples	1
+Brain-FrontalCortex(BA9) maximum: minimum rpkm of GTEx V6 Brain-FrontalCortex(BA9) samples	1
+Brain-FrontalCortex(BA9) average: minimum rpkm of GTEx V6 Brain-FrontalCortex(BA9) samples	1
+Brain-FrontalCortex(BA9) nsample: number of GTEx V6 Brain-FrontalCortex(BA9) samples	1
+Brain-Hippocampus minimum: minimum rpkm of GTEx V6 Brain-Hippocampus samples	1
+Brain-Hippocampus maximum: minimum rpkm of GTEx V6 Brain-Hippocampus samples	1
+Brain-Hippocampus average: minimum rpkm of GTEx V6 Brain-Hippocampus samples	1
+Brain-Hippocampus nsample: number of GTEx V6 Brain-Hippocampus samples	1
+Brain-Hypothalamus minimum: minimum rpkm of GTEx V6 Brain-Hypothalamus samples	1
+Brain-Hypothalamus maximum: minimum rpkm of GTEx V6 Brain-Hypothalamus samples	1
+Brain-Hypothalamus average: minimum rpkm of GTEx V6 Brain-Hypothalamus samples	1
+Brain-Hypothalamus nsample: number of GTEx V6 Brain-Hypothalamus samples	1
+Brain-Nucleusaccumbens(basalganglia) minimum: minimum rpkm of GTEx V6 Brain-Nucleusaccumbens(basalganglia) samples	1
+Brain-Nucleusaccumbens(basalganglia) maximum: minimum rpkm of GTEx V6 Brain-Nucleusaccumbens(basalganglia) samples	1
+Brain-Nucleusaccumbens(basalganglia) average: minimum rpkm of GTEx V6 Brain-Nucleusaccumbens(basalganglia) samples	1
+Brain-Nucleusaccumbens(basalganglia) nsample: number of GTEx V6 Brain-Nucleusaccumbens(basalganglia) samples	1
+Brain-Putamen(basalganglia) minimum: minimum rpkm of GTEx V6 Brain-Putamen(basalganglia) samples	1
+Brain-Putamen(basalganglia) maximum: minimum rpkm of GTEx V6 Brain-Putamen(basalganglia) samples	1
+Brain-Putamen(basalganglia) average: minimum rpkm of GTEx V6 Brain-Putamen(basalganglia) samples	1
+Brain-Putamen(basalganglia) nsample: number of GTEx V6 Brain-Putamen(basalganglia) samples	1
+Brain-Spinalcord(cervicalc-1) minimum: minimum rpkm of GTEx V6 Brain-Spinalcord(cervicalc-1) samples	1
+Brain-Spinalcord(cervicalc-1) maximum: minimum rpkm of GTEx V6 Brain-Spinalcord(cervicalc-1) samples	1
+Brain-Spinalcord(cervicalc-1) average: minimum rpkm of GTEx V6 Brain-Spinalcord(cervicalc-1) samples	1
+Brain-Spinalcord(cervicalc-1) nsample: number of GTEx V6 Brain-Spinalcord(cervicalc-1) samples	1
+Brain-Substantianigra minimum: minimum rpkm of GTEx V6 Brain-Substantianigra samples	1
+Brain-Substantianigra maximum: minimum rpkm of GTEx V6 Brain-Substantianigra samples	1
+Brain-Substantianigra average: minimum rpkm of GTEx V6 Brain-Substantianigra samples	1
+Brain-Substantianigra nsample: number of GTEx V6 Brain-Substantianigra samples	1
+Breast-MammaryTissue minimum: minimum rpkm of GTEx V6 Breast-MammaryTissue samples	1
+Breast-MammaryTissue maximum: minimum rpkm of GTEx V6 Breast-MammaryTissue samples	1
+Breast-MammaryTissue average: minimum rpkm of GTEx V6 Breast-MammaryTissue samples	1
+Breast-MammaryTissue nsample: number of GTEx V6 Breast-MammaryTissue samples	1
+Cells-EBV-transformedlymphocytes minimum: minimum rpkm of GTEx V6 Cells-EBV-transformedlymphocytes samples	1
+Cells-EBV-transformedlymphocytes maximum: minimum rpkm of GTEx V6 Cells-EBV-transformedlymphocytes samples	1
+Cells-EBV-transformedlymphocytes average: minimum rpkm of GTEx V6 Cells-EBV-transformedlymphocytes samples	1
+Cells-EBV-transformedlymphocytes nsample: number of GTEx V6 Cells-EBV-transformedlymphocytes samples	1
+Cells-Transformedfibroblasts minimum: minimum rpkm of GTEx V6 Cells-Transformedfibroblasts samples	1
+Cells-Transformedfibroblasts maximum: minimum rpkm of GTEx V6 Cells-Transformedfibroblasts samples	1
+Cells-Transformedfibroblasts average: minimum rpkm of GTEx V6 Cells-Transformedfibroblasts samples	1
+Cells-Transformedfibroblasts nsample: number of GTEx V6 Cells-Transformedfibroblasts samples	1
+Cervix-Ectocervix minimum: minimum rpkm of GTEx V6 Cervix-Ectocervix samples	1
+Cervix-Ectocervix maximum: minimum rpkm of GTEx V6 Cervix-Ectocervix samples	1
+Cervix-Ectocervix average: minimum rpkm of GTEx V6 Cervix-Ectocervix samples	1
+Cervix-Ectocervix nsample: number of GTEx V6 Cervix-Ectocervix samples	1
+Cervix-Endocervix minimum: minimum rpkm of GTEx V6 Cervix-Endocervix samples	1
+Cervix-Endocervix maximum: minimum rpkm of GTEx V6 Cervix-Endocervix samples	1
+Cervix-Endocervix average: minimum rpkm of GTEx V6 Cervix-Endocervix samples	1
+Cervix-Endocervix nsample: number of GTEx V6 Cervix-Endocervix samples	1
+Colon-Sigmoid minimum: minimum rpkm of GTEx V6 Colon-Sigmoid samples	1
+Colon-Sigmoid maximum: minimum rpkm of GTEx V6 Colon-Sigmoid samples	1
+Colon-Sigmoid average: minimum rpkm of GTEx V6 Colon-Sigmoid samples	1
+Colon-Sigmoid nsample: number of GTEx V6 Colon-Sigmoid samples	1
+Colon-Transverse minimum: minimum rpkm of GTEx V6 Colon-Transverse samples	1
+Colon-Transverse maximum: minimum rpkm of GTEx V6 Colon-Transverse samples	1
+Colon-Transverse average: minimum rpkm of GTEx V6 Colon-Transverse samples	1
+Colon-Transverse nsample: number of GTEx V6 Colon-Transverse samples	1
+Esophagus-GastroesophagealJunction minimum: minimum rpkm of GTEx V6 Esophagus-GastroesophagealJunction samples	1
+Esophagus-GastroesophagealJunction maximum: minimum rpkm of GTEx V6 Esophagus-GastroesophagealJunction samples	1
+Esophagus-GastroesophagealJunction average: minimum rpkm of GTEx V6 Esophagus-GastroesophagealJunction samples	1
+Esophagus-GastroesophagealJunction nsample: number of GTEx V6 Esophagus-GastroesophagealJunction samples	1
+Esophagus-Mucosa minimum: minimum rpkm of GTEx V6 Esophagus-Mucosa samples	1
+Esophagus-Mucosa maximum: minimum rpkm of GTEx V6 Esophagus-Mucosa samples	1
+Esophagus-Mucosa average: minimum rpkm of GTEx V6 Esophagus-Mucosa samples	1
+Esophagus-Mucosa nsample: number of GTEx V6 Esophagus-Mucosa samples	1
+Esophagus-Muscularis minimum: minimum rpkm of GTEx V6 Esophagus-Muscularis samples	1
+Esophagus-Muscularis maximum: minimum rpkm of GTEx V6 Esophagus-Muscularis samples	1
+Esophagus-Muscularis average: minimum rpkm of GTEx V6 Esophagus-Muscularis samples	1
+Esophagus-Muscularis nsample: number of GTEx V6 Esophagus-Muscularis samples	1
+FallopianTube minimum: minimum rpkm of GTEx V6 FallopianTube samples	1
+FallopianTube maximum: minimum rpkm of GTEx V6 FallopianTube samples	1
+FallopianTube average: minimum rpkm of GTEx V6 FallopianTube samples	1
+FallopianTube nsample: number of GTEx V6 FallopianTube samples	1
+Heart-AtrialAppendage minimum: minimum rpkm of GTEx V6 Heart-AtrialAppendage samples	1
+Heart-AtrialAppendage maximum: minimum rpkm of GTEx V6 Heart-AtrialAppendage samples	1
+Heart-AtrialAppendage average: minimum rpkm of GTEx V6 Heart-AtrialAppendage samples	1
+Heart-AtrialAppendage nsample: number of GTEx V6 Heart-AtrialAppendage samples	1
+Heart-LeftVentricle minimum: minimum rpkm of GTEx V6 Heart-LeftVentricle samples	1
+Heart-LeftVentricle maximum: minimum rpkm of GTEx V6 Heart-LeftVentricle samples	1
+Heart-LeftVentricle average: minimum rpkm of GTEx V6 Heart-LeftVentricle samples	1
+Heart-LeftVentricle nsample: number of GTEx V6 Heart-LeftVentricle samples	1
+Kidney-Cortex minimum: minimum rpkm of GTEx V6 Kidney-Cortex samples	1
+Kidney-Cortex maximum: minimum rpkm of GTEx V6 Kidney-Cortex samples	1
+Kidney-Cortex average: minimum rpkm of GTEx V6 Kidney-Cortex samples	1
+Kidney-Cortex nsample: number of GTEx V6 Kidney-Cortex samples	1
+Liver minimum: minimum rpkm of GTEx V6 Liver samples	1
+Liver maximum: minimum rpkm of GTEx V6 Liver samples	1
+Liver average: minimum rpkm of GTEx V6 Liver samples	1
+Liver nsample: number of GTEx V6 Liver samples	1
+Lung minimum: minimum rpkm of GTEx V6 Lung samples	1
+Lung maximum: minimum rpkm of GTEx V6 Lung samples	1
+Lung average: minimum rpkm of GTEx V6 Lung samples	1
+Lung nsample: number of GTEx V6 Lung samples	1
+MinorSalivaryGland minimum: minimum rpkm of GTEx V6 MinorSalivaryGland samples	1
+MinorSalivaryGland maximum: minimum rpkm of GTEx V6 MinorSalivaryGland samples	1
+MinorSalivaryGland average: minimum rpkm of GTEx V6 MinorSalivaryGland samples	1
+MinorSalivaryGland nsample: number of GTEx V6 MinorSalivaryGland samples	1
+Muscle-Skeletal minimum: minimum rpkm of GTEx V6 Muscle-Skeletal samples	1
+Muscle-Skeletal maximum: minimum rpkm of GTEx V6 Muscle-Skeletal samples	1
+Muscle-Skeletal average: minimum rpkm of GTEx V6 Muscle-Skeletal samples	1
+Muscle-Skeletal nsample: number of GTEx V6 Muscle-Skeletal samples	1
+Nerve-Tibial minimum: minimum rpkm of GTEx V6 Nerve-Tibial samples	1
+Nerve-Tibial maximum: minimum rpkm of GTEx V6 Nerve-Tibial samples	1
+Nerve-Tibial average: minimum rpkm of GTEx V6 Nerve-Tibial samples	1
+Nerve-Tibial nsample: number of GTEx V6 Nerve-Tibial samples	1
+Ovary minimum: minimum rpkm of GTEx V6 Ovary samples	1
+Ovary maximum: minimum rpkm of GTEx V6 Ovary samples	1
+Ovary average: minimum rpkm of GTEx V6 Ovary samples	1
+Ovary nsample: number of GTEx V6 Ovary samples	1
+Pancreas minimum: minimum rpkm of GTEx V6 Pancreas samples	1
+Pancreas maximum: minimum rpkm of GTEx V6 Pancreas samples	1
+Pancreas average: minimum rpkm of GTEx V6 Pancreas samples	1
+Pancreas nsample: number of GTEx V6 Pancreas samples	1
+Pituitary minimum: minimum rpkm of GTEx V6 Pituitary samples	1
+Pituitary maximum: minimum rpkm of GTEx V6 Pituitary samples	1
+Pituitary average: minimum rpkm of GTEx V6 Pituitary samples	1
+Pituitary nsample: number of GTEx V6 Pituitary samples	1
+Prostate minimum: minimum rpkm of GTEx V6 Prostate samples	1
+Prostate maximum: minimum rpkm of GTEx V6 Prostate samples	1
+Prostate average: minimum rpkm of GTEx V6 Prostate samples	1
+Prostate nsample: number of GTEx V6 Prostate samples	1
+Skin-NotSunExposed(Suprapubic) minimum: minimum rpkm of GTEx V6 Skin-NotSunExposed(Suprapubic) samples	1
+Skin-NotSunExposed(Suprapubic) maximum: minimum rpkm of GTEx V6 Skin-NotSunExposed(Suprapubic) samples	1
+Skin-NotSunExposed(Suprapubic) average: minimum rpkm of GTEx V6 Skin-NotSunExposed(Suprapubic) samples	1
+Skin-NotSunExposed(Suprapubic) nsample: number of GTEx V6 Skin-NotSunExposed(Suprapubic) samples	1
+Skin-SunExposed(Lowerleg) minimum: minimum rpkm of GTEx V6 Skin-SunExposed(Lowerleg) samples	1
+Skin-SunExposed(Lowerleg) maximum: minimum rpkm of GTEx V6 Skin-SunExposed(Lowerleg) samples	1
+Skin-SunExposed(Lowerleg) average: minimum rpkm of GTEx V6 Skin-SunExposed(Lowerleg) samples	1
+Skin-SunExposed(Lowerleg) nsample: number of GTEx V6 Skin-SunExposed(Lowerleg) samples	1
+SmallIntestine-TerminalIleum minimum: minimum rpkm of GTEx V6 SmallIntestine-TerminalIleum samples	1
+SmallIntestine-TerminalIleum maximum: minimum rpkm of GTEx V6 SmallIntestine-TerminalIleum samples	1
+SmallIntestine-TerminalIleum average: minimum rpkm of GTEx V6 SmallIntestine-TerminalIleum samples	1
+SmallIntestine-TerminalIleum nsample: number of GTEx V6 SmallIntestine-TerminalIleum samples	1
+Spleen minimum: minimum rpkm of GTEx V6 Spleen samples	1
+Spleen maximum: minimum rpkm of GTEx V6 Spleen samples	1
+Spleen average: minimum rpkm of GTEx V6 Spleen samples	1
+Spleen nsample: number of GTEx V6 Spleen samples	1
+Stomach minimum: minimum rpkm of GTEx V6 Stomach samples	1
+Stomach maximum: minimum rpkm of GTEx V6 Stomach samples	1
+Stomach average: minimum rpkm of GTEx V6 Stomach samples	1
+Stomach nsample: number of GTEx V6 Stomach samples	1
+Testis minimum: minimum rpkm of GTEx V6 Testis samples	1
+Testis maximum: minimum rpkm of GTEx V6 Testis samples	1
+Testis average: minimum rpkm of GTEx V6 Testis samples	1
+Testis nsample: number of GTEx V6 Testis samples	1
+Thyroid minimum: minimum rpkm of GTEx V6 Thyroid samples	1
+Thyroid maximum: minimum rpkm of GTEx V6 Thyroid samples	1
+Thyroid average: minimum rpkm of GTEx V6 Thyroid samples	1
+Thyroid nsample: number of GTEx V6 Thyroid samples	1
+Uterus minimum: minimum rpkm of GTEx V6 Uterus samples	1
+Uterus maximum: minimum rpkm of GTEx V6 Uterus samples	1
+Uterus average: minimum rpkm of GTEx V6 Uterus samples	1
+Uterus nsample: number of GTEx V6 Uterus samples	1
+Vagina minimum: minimum rpkm of GTEx V6 Vagina samples	1
+Vagina maximum: minimum rpkm of GTEx V6 Vagina samples	1
+Vagina average: minimum rpkm of GTEx V6 Vagina samples	1
+Vagina nsample: number of GTEx V6 Vagina samples	1
+WholeBlood minimum: minimum rpkm of GTEx V6 WholeBlood samples	1
+WholeBlood maximum: minimum rpkm of GTEx V6 WholeBlood samples	1
+WholeBlood average: minimum rpkm of GTEx V6 WholeBlood samples	1
+WholeBlood nsample: number of GTEx V6 WholeBlood samples	1
+Interactions(IntAct): The number of other genes this gene interacting with (from IntAct). Full information (gene name followed by Pubmed id in "[]") can be found in the ".complete" table	1
+Interactions(BioGRID): The number of other genes this gene interacting with (from BioGRID) Full information (gene name followed by Pubmed id in "[]") can be found in the ".complete" table	1
+Interactions(ConsensusPathDB): The number of other genes this gene interacting with (from ConsensusPathDB). Full information (gene name followed by Pubmed id in "[]") can be  found in the ".complete" table	1
+P(HI): Estimated probability of haploinsufficiency of the gene (from doi:10.1371/journal.pgen.1001154)	1
+P(rec): Estimated probability that gene is a recessive disease gene (from DOI:10.1126/science.1215040)	1
+Known_rec_info: Known recessive status of the gene (from DOI:10.1126/science.1215040) "lof-tolerant = seen in homozygous state in at least one 1000G individual" "recessive = known OMIM recessive disease"  (original annotations from DOI:10.1126/science.1215040)	2
+RVIS: Residual Variation Intolerance Score, a measure of intolerance of mutational burden, the higher the score the more tolerant to mutational burden the gene is.  from doi:10.1371/journal.pgen.1003709	1
+RVIS_percentile: The percentile rank of the gene based on RVIS, the higher the percentile the more tolerant to mutational burden the gene is. 	1
+RVIS_ExAC_0.05%(AnyPopn): Residual Variation Intolerance Score based on ExAC r0.3 data 	1
+%RVIS_ExAC_0.05%(AnyPopn): The percentile rank of the gene based on RVIS_ExAC_0.05%(AnyPopn) 	1
+GDI: gene damage index score, "a genome-wide, gene-level metric of the mutational damage that has accumulated in the general population" from doi: 10.1073/pnas.1518646112. The higher the score the less likely the gene is to be responsible for monogenic diseases.	1
+GDI-Phred: Phred-scaled GDI scores	1
+Gene damage prediction (all disease-causing genes): gene damage prediction (low/medium/high) by GDI for all diseases	2
+Gene damage prediction (all Mendelian disease-causing genes): gene damage prediction (low/medium/high) by GDI for all Mendelian diseases	2
+Gene damage prediction (Mendelian AD disease-causing genes): gene damage prediction (low/medium/high) by GDI for Mendelian autosomal dominant diseases	2
+Gene damage prediction (Mendelian AR disease-causing genes): gene damage prediction (low/medium/high) by GDI for Mendelian autosomal recessive diseases	2
+Gene damage prediction (all PID disease-causing genes): gene damage prediction (low/medium/high) by GDI for all primary immunodeficiency diseases	2
+Gene damage prediction (PID AD disease-causing genes): gene damage prediction (low/medium/high) by GDI for primary immunodeficiency autosomal dominant diseases	2
+Gene damage prediction (PID AR disease-causing genes): gene damage prediction (low/medium/high) by GDI for primary immunodeficiency autosomal recessive diseases	2
+Gene damage prediction (all cancer disease-causing genes): gene damage prediction (low/medium/high) by GDI for all cancer disease	2
+Gene damage prediction (cancer recessive disease-causing genes): gene damage prediction (low/medium/high) by GDI for cancer recessive disease	2
+Gene damage prediction (cancer dominant disease-causing genes): gene damage prediction (low/medium/high) by GDI for cancer dominant disease	2
+LoFtool_score: a percential score for gene intolerance to functional change. The lower the score the higher gene intolerance to functional change. For details please contact Dr. Joao Fadista(joao.fadista@med.lu.se)	1
+SORVA_LOF_MAF0.005_HetOrHom: the fraction of individuals in the 1000 Genomes Project data (N=2504) who are either Heterozygote or Homozygote of LOF SNVs whose MAF<0.005. This fraction is from  a method for ranking genes based on mutational burden called SORVA (Significance Of Rare VAriants).  Please see doi: 10.1101/103218 for details.	1
+SORVA_LOF_MAF0.005_HomOrCompoundHet: the fraction of individuals in the 1000 Genomes Project data (N=2504) who are either Compound Heterozygote or Homozygote of LOF SNVs whose MAF<0.005. This fraction is from  a method for ranking genes based on mutational burden called SORVA (Significance Of Rare VAriants).  Please see doi: 10.1101/103218 for details.	1
+SORVA_LOF_MAF0.001_HetOrHom: the fraction of individuals in the 1000 Genomes Project data (N=2504) who are either Heterozygote or Homozygote of LOF SNVs whose MAF<0.001. This fraction is from  a method for ranking genes based on mutational burden called SORVA (Significance Of Rare VAriants).  Please see doi: 10.1101/103218 for details.	1
+SORVA_LOF_MAF0.001_HomOrCompoundHet: the fraction of individuals in the 1000 Genomes Project data (N=2504) who are either Compound Heterozygote or Homozygote of LOF SNVs whose MAF<0.001. This fraction is from  a method for ranking genes based on mutational burden called SORVA (Significance Of Rare VAriants).  Please see doi: 10.1101/103218 for details.	1
+SORVA_LOForMissense_MAF0.005_HetOrHom: the fraction of individuals in the 1000 Genomes Project data (N=2504) who are either Heterozygote or Homozygote of LOF or missense SNVs whose MAF<0.005. This fraction is from  a method for ranking genes based on mutational burden called SORVA (Significance Of Rare VAriants).  Please see doi: 10.1101/103218 for details.	1
+SORVA_LOForMissense_MAF0.005_HomOrCompoundHet: the fraction of individuals in the 1000 Genomes Project data (N=2504) who are either Compound Heterozygote or Homozygote of LOF or missense SNVs whose MAF<0.005. This fraction is from  a method for ranking genes based on mutational burden called SORVA (Significance Of Rare VAriants).  Please see doi: 10.1101/103218 for details.	1
+SORVA_LOForMissense_MAF0.001_HetOrHom: the fraction of individuals in the 1000 Genomes Project data (N=2504) who are either Heterozygote or Homozygote of LOF or missense SNVs whose MAF<0.001. This fraction is from  a method for ranking genes based on mutational burden called SORVA (Significance Of Rare VAriants).  Please see doi: 10.1101/103218 for details.	1
+SORVA_LOForMissense_MAF0.001_HomOrCompoundHet: the fraction of individuals in the 1000 Genomes Project data (N=2504) who are either Compound Heterozygote or Homozygote of LOF or missense SNVs whose MAF<0.001. This fraction is from  a method for ranking genes based on mutational burden called SORVA (Significance Of Rare VAriants).  Please see doi: 10.1101/103218 for details.	1
+Essential_gene: Essential ("E") or Non-essential phenotype-changing ("N") based on Mouse Genome Informatics database. from doi:10.1371/journal.pgen.1003484	2
+MGI_mouse_gene: Homolog mouse gene name from MGI	2
+MGI_mouse_phenotype: Phenotype description for the homolog mouse gene from MGI	2
+ZFIN_zebrafish_gene: Homolog zebrafish gene name from ZFIN	2
+ZFIN_zebrafish_structure: Affected structure of the homolog zebrafish gene from ZFIN	2
+ZFIN_zebrafish_phenotype_quality: Phenotype description for the homolog zebrafish gene from ZFIN	2
+ZFIN_zebrafish_phenotype_tag: Phenotype tag for the homolog zebrafish gene from ZFIN	2
