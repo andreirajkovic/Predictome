@@ -524,3 +524,119 @@ for i in indices_0:
 ax[2].legend(loc=0)
 ax[2].legend(loc=0)
 plt.show()
+
+
+"""
+**************************************
+    METRIC TO ASSESS THE MODELS 
+**************************************
+"""
+
+def uncertainity(df):
+    return 1-(np.sign(df["CL_min"].astype(float)) == np.sign(df["CL_max"].astype(float))).sum() / df.shape[0]
+
+def conf_fp(df, neg=0, label='label'):
+    return (df[df["CL_min"] > 0][label] == neg).sum() / df.shape[0]
+
+def conf_fn(df, pos=1, label='label'):
+    return (df[df["CL_max"] < 0][label] == pos).sum() / df.shape[0]
+
+
+
+"""
+**************************************
+HOW IS THE MODEL IMPACTED BY SAMPLE SIZE
+**************************************
+"""
+def train_fun():
+    pme.variant.gt_matrix = matrix_copy  # reload the data
+    s_range = np.linspace(0.25,1,3)  # percent of training datadataframe
+    """Metrics to assess the model"""
+    avg_u =[]
+    avg_fp = []
+    avg_fn = []
+    for s in s_range:
+        pme.variant.gt_matrix = matrix_copy  # reload the data
+        snp_stats_or = pd.DataFrame(index=np.arange(pme.variant.gt_matrix.shape[1] - 1))
+        snp_stats_pval = pd.DataFrame(index=np.arange(pme.variant.gt_matrix.shape[1] - 1))
+        for x in range(500):
+            bsidx = np.random.choice(np.arange(pme.variant.gt_matrix.shape[0]), size=int(pme.variant.gt_matrix.shape[0] * s))
+            pme.variant.gt_matrix = pme.variant.gt_matrix[bsidx]  # we dont actually care about row info
+            pme.variant.filter_matrix(by='fisherp')
+            snp_stats_or[x] = pme.variant.odds_ratio
+            snp_stats_pval[x] = pme.variant.pval_arry
+            pme.variant.gt_matrix = matrix_copy
+            print(x / 500)
+        snp_stats_or['CL_min'] = snp_stats_or.quantile(0.025, axis=1)
+        snp_stats_or['CL_max'] = snp_stats_or.iloc[:, :-1].quantile(0.975, axis=1)
+        snp_stats_or['means'] = snp_stats_or.iloc[:, :-2].mean(axis=1)
+        snp_stats_pval['CL_min'] = snp_stats_pval.quantile(0.025, axis=1)
+        snp_stats_pval['CL_max'] = snp_stats_pval.iloc[:, :-1].quantile(0.975, axis=1)
+        snp_stats_pval['means'] = snp_stats_pval.iloc[:, :-2].mean(axis=1)
+        odds_mean = snp_stats_or['means']
+        pval_mean = snp_stats_pval['means']
+        pval_mean_vals = pval_mean.values
+        cleaned_means = odds_mean[~odds_mean.isin([np.nan, np.inf, -np.inf])].dropna()
+        real_index = cleaned_means.index
+        neg_idx = cleaned_means[cleaned_means < 0].sort_values().index
+        pos_idx = cleaned_means[cleaned_means > 0].sort_values(ascending=False).index
+        neg_inf = odds_mean[odds_mean.isin([-np.inf]).dropna()]
+        neg_inf_index = neg_inf.index
+        pos_inf = odds_mean[odds_mean.isin([np.inf]).dropna()]
+        pos_inf_index = pos_inf.index     
+        CL_min_max_real = snp_stats_or.loc[real_index, ['CL_min', 'CL_max']]
+        signed = CL_min_max_real.apply(np.sign)
+        signed_idx = signed[signed['CL_min'] == signed['CL_max']].index
+        #  INFINITY SIGNIFICANT  < 0.05
+        neg_sig_vals_idx = pval_mean.loc[neg_inf_index][pval_mean.loc[neg_inf_index] <= 0.05].index
+        pos_sig_vals_idx = pval_mean.loc[pos_inf_index][pval_mean.loc[pos_inf_index] <= 0.05].index
+        # INDICES
+        col_indx = np.hstack((neg_sig_vals_idx, pos_sig_vals_idx, signed_idx, -1))
+        if col_indx.shape[0] == 1:
+            print("No significant features found for sample size %s" % s)
+            continue
+        u =[]
+        fp = []
+        fn = []
+        """Reduce the size for the training"""
+        for p in range(10):
+            pme.variant.gt_matrix = matrix_copy  # reload the data
+            pme.variant.gt_matrix = pme.variant.gt_matrix[:, col_indx]               
+            bsidx = np.random.choice(np.arange(pme.variant.gt_matrix.shape[0]), size= int(pme.variant.gt_matrix.shape[0] * s), replace=False)
+            while len(np.unique(pme.variant.gt_matrix[bsidx, -1].A)) < 2:
+                bsidx = np.random.choice(np.arange(pme.variant.gt_matrix.shape[0]), size= int(pme.variant.gt_matrix.shape[0] * s),replace=False)
+            pme.variant.gt_matrix = pme.variant.gt_matrix[bsidx]
+            log_test = clf_log(matrix_class=pme.variant, feature_df=pme.variant.columns_df, grid_search_random=1, original_cols=pme.variant.original_cols[col_indx[:-1]], bst=True, num_folds=100)
+            model = [LogisticRegression(penalty='l2', C=5, class_weight='balanced')]  # manual input the model alternative to this is a log_search function log_model_search()
+            log_test.models = model
+            log_test.train()
+            """POST PROCESSING ANALYSIS"""
+            log_test.prediction_tracker['CL_min'] = log_test.prediction_tracker.astype(float).quantile(0.025, axis=1)
+            log_test.prediction_tracker['CL_max'] = log_test.prediction_tracker.iloc[:, :-1].astype(float).quantile(0.975, axis=1)
+            log_test.prediction_tracker['means'] = log_test.prediction_tracker.iloc[:, :-2].astype(float).mean(axis=1)
+            log_test.prediction_tracker['label'] = pme.variant.gt_matrix[:, -1].A.T[0]
+            u.append(uncertainity(log_test.prediction_tracker))
+            fp.append(conf_fp(log_test.prediction_tracker))
+            fn.append(conf_fn(log_test.prediction_tracker))    
+        avg_u.append(u)
+        avg_fp.append(fp)
+        avg_fn.append(fn)
+    return avg_u, avg_fp, avg_fn, s_range
+
+a,b,c,d = train_fun()
+fig, ax = plt.subplots(nrows=1, ncols=3, sharey=False)
+fig.suptitle("Model Assessment", fontsize=16)
+ax = ax.flatten()
+ax[0].boxplot(a)
+ax[0].set_xticklabels([str(x) for x in d])
+ax[0].set_ylabel("Uncertainity")
+ax[0].set_xlabel("Percent Data used")
+ax[1].boxplot(b)
+ax[1].set_xticklabels([str(x) for x in d])
+ax[1].set_ylabel("False Positive Rate")
+ax[1].set_xlabel("Percent Data used")
+ax[2].boxplot(c)
+ax[2].set_xticklabels([str(x) for x in d])
+ax[2].set_ylabel("False Negative Rate")
+ax[2].set_xlabel("Percent Data used")
+plt.show()
